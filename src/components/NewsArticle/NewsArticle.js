@@ -5,7 +5,7 @@ const NewsArticle = ({ id, headline, image, description, url }) => {
   return (
     <article>
       <img alt={headline} src={image} />
-      <h3><a href={url}>{headline}</a></h3>
+      <a href={url}>{headline}</a>
       <p>{description}</p>
     </article>
   )

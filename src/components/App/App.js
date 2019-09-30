@@ -15,7 +15,9 @@ class App extends Component {
     const { local } = this.state;
     return (
       <div className="app">
-        <NewsContainer newsArticles={local} />
+        <main>
+          <NewsContainer newsArticles={local} />
+        </main>
       </div>
     );
   }
