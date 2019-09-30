@@ -1,5 +1,5 @@
 import React from 'react';
-import './NewsContainer.css'
+import './NewsContainer.scss'
 
 // NEWSCONTAINER COMPONENT CODE GOES HERE
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './SearchForm.css';
+import './SearchForm.scss';
 
 // SEARCHFORM COMPONENT CODE GOES HERE
 
