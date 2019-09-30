@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import local from '../../data/local';
 import './App.scss';
+import NewsContainer from '../NewsContainer/NewsContainer';
 
 class App extends Component {
   constructor() {
@@ -11,9 +12,10 @@ class App extends Component {
   }
 
   render() {
+    const { local } = this.state;
     return (
       <div className="app">
-        YOUR CODE GOES HERE!
+        <NewsContainer newsArticles={local} />
       </div>
     );
   }
