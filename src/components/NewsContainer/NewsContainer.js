@@ -1,6 +1,6 @@
 import React from 'react';
+import { NewsArticle } from '../../index';
 import './NewsContainer.scss';
-import NewsArticle from '../NewsArticle/NewsArticle';
 
 const NewsContainer = ({ newsArticles }) => {
   return (
@@ -16,17 +16,4 @@ const NewsContainer = ({ newsArticles }) => {
   );
 };
 
-export default NewsContainer;
-
-
-// Create a NewsContainer component, which will act as a container that 
-// renders each of our news articles. For now, the news articles being 
-// displayed will be “Local News”. Figure out how to pass information 
-// from App.js to NewsContainer.js!
-
-// Then create a NewsArticle component. Each NewsArticle card will display: 
-// the image, the headline, the description, and the url (see the screenshot 
-//   above for an idea).
-
-// In your NewsContainer component, create NewsArticle cards that have the 
-// information each needs to display properly.
+export { NewsContainer };

@@ -57,4 +57,4 @@ const local = [
   }
 ]
 
-export default local;
+export { local };

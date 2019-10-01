@@ -18,18 +18,6 @@ class SearchForm extends Component {
   render() {
     const { search } = this.state;
     return (
-      // <form>
-      //   <input
-      //     placeholder="Search News"
-      //     name="searchInput"
-      //     type="text"
-      //     value={search}
-      //     onChange={(event) => this.handleChange(event)}
-      //   />
-      //   <button>
-      //     Search Now
-      // </button>
-      // </form>
       <form>
         <div>
           <input
@@ -47,4 +35,4 @@ class SearchForm extends Component {
   }
 }
 
-export default SearchForm;
+export { SearchForm };
