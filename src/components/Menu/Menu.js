@@ -1,17 +1,18 @@
 import React from 'react';
 import './Menu.scss'
 
-const Menu = () => {
+const Menu = ({ selectNews, state }) => {
+
   return (
     <nav>
       <h1>What's <span>New</span></h1>
       <div className="menu-buttons-section">
         <ul>
-          <a href=""><li>Local News</li></a>
-          <a href=""><li>Technology</li></a>
-          <a href=""><li>Entertainment</li></a>
-          <a href=""><li>Science</li></a>
-          <a href=""><li>Health</li></a>
+          <li onClick={() => selectNews(state.local)}>Local News</li>
+          <li onClick={() => selectNews(state.technology)}>Technology</li>
+          <li onClick={() => selectNews(state.entertainment)}>Entertainment</li>
+          <li onClick={() => selectNews(state.science)}>Science</li>
+          <li onClick={() => selectNews(state.health)} > Health</li>
         </ul>
       </div>
     </nav>
