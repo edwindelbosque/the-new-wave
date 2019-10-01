@@ -1,51 +1,80 @@
 form {
-  height: 63px;
-  padding-top: 15px;
-  display: flex;
+	align-items: center;
+	display: flex;
   padding-left: 40px;
-  background: rgb(31, 31, 31);
-  border-bottom: solid 5px rgb(55, 0, 255);
+  margin-top: 10px;
+	width: 400px;
+  height: 70px;
 
-  input {
-    height: 30px;
-    border: none;
-    font-size: 16px;
-    width: 300px;
-    padding-left: 10px;
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
-    box-shadow: 0 0 4px black;
+	div {
+		max-width: 53px;
+		position: relative;
+		width: 100%;
+    transition: 0.4s ease-in-out;
 
-    &:focus {
-      outline: none;
+		input {
+			background-color: rgb(31, 31, 31);
+			border-radius: 50px;
+			border: none;
+			color: #24233A;
+			cursor: pointer;
+			font-size: 20px;
+			outline: none;
+      padding: 15px;
+      padding-left: 22px;
+			transition: 0.4s ease-in-out;
+			width: 100%;
+
+			&::placeholder {
+				color: rgb(31, 31, 31);
+			}
+		}
+
+		svg {
+			height: 20px;
+			position: absolute;
+			right: calc(53px / 2);
+			top: 50%;
+			transform: translate(50%, -50%);
+			width: 20px;
+      pointer-events: none;
+      
+			path {
+				fill: rgb(255, 225, 0);
+				transition: 0.4s ease-in-out;
+			}
     }
-  }
+    
+    &:hover {
+        max-width: 300px;
+  
+        input {
+          background-color: #FFF;
+          padding-right: 50px;
+          box-shadow: inset 0px 0px 4px rgba(0, 0, 0, .5);
+        }
 
-  button {
-    height: 30px;
-    width: 110px;
-    background-color: rgb(103, 103, 103);
-    border: none;
-    font-size: 16px;
-    color: white;
-    font-weight: 600;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-    box-shadow: 0 0 4px black;
-    transition: .15s;
-
-      &:focus {
-        outline: none;
-      }
-
-      &:hover {
-        background-color: rgb(68, 16, 190);
-        transition: .15s;
-      }
-
-      &:active {
-        background-color: rgb(45, 0, 148);
-        transition: .15s;
-      }
+        svg {
+          path {
+            fill: rgb(53, 0, 245);
+          }
+        }
     }
-  }
+
+		&:focus-within {
+			max-width: 300px;
+
+			input {
+				background-color: #FFF;
+				padding-right: 50px;
+				box-shadow: inset 0px 0px 4px rgba(0, 0, 0, .5);
+			}
+
+			svg {
+				path {
+					fill: rgb(53, 0, 245);
+				}
+			}
+		}
+	}
+}
