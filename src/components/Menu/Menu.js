@@ -4,7 +4,7 @@ import './Menu.scss'
 const Menu = () => {
   return (
     <nav>
-      <h1>What's New</h1>
+      <h1>What's <span>New</span></h1>
       <div className="menu-buttons-section">
         <ul>
           <a href=""><li>Local News</li></a>

@@ -1,5 +1,5 @@
 nav {
-  background-color: rgb(27, 24, 39);
+  background-color: rgb(31, 31, 31);
   width: 500px;
   display: flex;
   flex-direction: column;
@@ -8,7 +8,16 @@ nav {
   h1 {
     margin: 20px 0;
     font-size: 30px;
-    color: rgb(255, 222, 32);
+    border: 2px solid rgb(255, 203, 32);
+    color: rgb(255, 203, 32);
+    padding-left: 10px;
+    border-radius: 1px;
+
+    span {
+      background-color: rgb(255, 203, 32);
+      color: rgb(31, 31, 31);
+      padding: 0 10px;
+    }
   }
 
   ul {
@@ -24,7 +33,7 @@ nav {
 
   li {
     display: inline;
-    color: white;
+    color: rgb(245, 245, 245);
     padding: 10px;
     font-weight: 600;
     font-size: 23px;
@@ -32,13 +41,13 @@ nav {
 
   a {
     text-decoration: none;
-    transition: .2s;
+    transition: .15s;
 
     &:hover {
-      padding: 0px 40px 0 0px;
-      background-color: rgb(59, 38, 198);
-      transition: .2s;
-      border-right: 4px solid rgb(255, 225, 0);
+      padding: 0px 30px 0 0px;
+      background-color: rgb(65, 30, 190);
+      transition: .15s;
+      border-right: 2px solid rgb(255, 203, 32);
     }
   }
 
