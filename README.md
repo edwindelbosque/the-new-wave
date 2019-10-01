@@ -2,6 +2,8 @@
 
 This application was built with `create-react-app`.
 
+## Check it out in GitHub Pages [here](https://edwindelbosque.github.io/whats-new/)!
+
 <img width="1433" alt="Screen Shot 2019-09-30 at 11 18 32 PM" src="https://user-images.githubusercontent.com/48811985/65936120-06b7e900-e40b-11e9-87c4-7edd501dd949.png">
 
 ![](https://user-images.githubusercontent.com/48811985/65935989-82fdfc80-e40a-11e9-9fd2-98450b22050a.gif)
