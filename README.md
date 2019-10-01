@@ -2,13 +2,11 @@
 
 This application was built with `create-react-app`.
 
-### Iteration 2
+<img width="1433" alt="Screen Shot 2019-09-30 at 11 18 32 PM" src="https://user-images.githubusercontent.com/48811985/65936120-06b7e900-e40b-11e9-87c4-7edd501dd949.png">
 
-Take a look at the `data` directory and inspect the other news data that is included.  There is an `entertainment.js`, `health.js`, `science.js`, and `technology.js` file.  Import the data and put it in `App's` state.  Create a Menu component that has navigation to display the different news articles.  When selecting a navigation link, it should display the relevant news articles in the NewsContainer component.  How can you reuse components?
-
-**Add/Update any snapshot tests necessary.  Also add tests for any new methods you have created or changes in state** 
-
-### Iteration 3 (extension - do not attempt until iterations 0 - 2 are completed)
+![](https://user-images.githubusercontent.com/48811985/65935989-82fdfc80-e40a-11e9-9fd2-98450b22050a.gif)
+![](https://user-images.githubusercontent.com/48811985/65935986-81343900-e40a-11e9-9540-c107ab489efb.gif)
+![](https://user-images.githubusercontent.com/48811985/65935996-898c7400-e40a-11e9-9444-6aca3081180a.gif)
 
 Add in the functionality so that a user can search through the news articles.  After a user has typed a search query, a user should either be able to press `Enter` or `Search` to filter out the correct news articles.  The search functionality should only filter through the selected news articles.
 
