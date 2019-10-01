@@ -10,16 +10,24 @@ class SearchForm extends Component {
   }
 
   handleChange = (event) => {
+    if (event.keyCode === 13) {
+      event.preventDefault(); // Let's stop this event.
+      event.stopPropagation(); // Really this time.
+    }
     this.setState({
       search: event.target.value
     })
     this.props.searchNews(event.target.value)
   }
 
+  handleSubmit(event) {
+    event.preventDefault();
+  }
+
   render() {
     const { search } = this.state;
     return (
-      <form>
+      <form onSubmit={(event) => this.submitHandler(event)}>
         <div>
           <input
             placeholder="Search News"

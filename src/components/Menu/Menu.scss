@@ -1,23 +1,26 @@
 nav {
-  background-color: rgb(31, 31, 31);
-  width: 300px;
+  background-color: rgb(255, 255, 255);
+  width: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.26);
 
   h1 {
     margin: 20px auto;
     width: 182px;
     font-size: 30px;
-    border: 2px solid rgb(255, 203, 32);
-    color: rgb(255, 203, 32);
-    border-radius: 1px;
+    font-weight: 500;
+    border: 2px solid rgb(32, 255, 43);
+    color: rgb(58, 58, 58);
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.26);
 
     span {
-      background-color: rgb(255, 203, 32);
-      color: rgb(31, 31, 31);
-      padding: 0 57px;
+      background-image: linear-gradient(-90deg, rgb(21, 33, 255), rgb(0, 94, 255));
+      color: rgb(255, 255, 255);
+      padding: 0 65px;
+      border-top-right-radius: 40px;
     }
   }
 
@@ -34,7 +37,7 @@ nav {
 
   li {
     display: inline;
-    color: rgb(245, 245, 245);
+    color: rgb(53, 53, 53);
     padding: 5px 5px 5px 10px;
     font-weight: 600;
     font-size: 20px;
@@ -43,9 +46,9 @@ nav {
 
     &:hover {
       padding-right: 35px;
-      background-color: rgb(65, 30, 190);
+      background-color: rgb(0, 255, 64);
       transition: .15s;
-      border-right: 2px solid rgb(255, 203, 32);
+      box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.171);
     }
   }
 
@@ -54,7 +57,7 @@ nav {
 @media only screen and (max-width: 768px) {
   nav {
    width: 100%;
-   height: 255px;
+   height: 262px;
    min-height: 255px;
 
    li {
@@ -62,12 +65,13 @@ nav {
    }
 
    h1 {
-     font-size: 20px;
+     font-size: 25px;
      margin: 15px auto 10px;
+     width: 110px;
 
      span {
       width: 100%;
-      padding: 0 68px;
+      padding: 0 28px;
     }
    }
 

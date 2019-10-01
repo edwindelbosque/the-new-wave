@@ -10,12 +10,13 @@ form {
 		max-width: 53px;
 		position: relative;
 		width: 100%;
-    transition: 0.4s ease-in-out;
+		transition: 0.4s ease-in-out;
 
 		input {
-			background-color: rgb(31, 31, 31);
+			background-color: rgb(0, 255, 76);
 			border-radius: 50px;
 			border: none;
+			box-shadow: 0 1px 2px rgba(0, 0, 0, 0.434);
 			color: #24233A;
 			cursor: pointer;
 			font-size: 20px;
@@ -26,7 +27,7 @@ form {
 			width: 100%;
 
 			&::placeholder {
-				color: rgb(31, 31, 31);
+				color: rgb(0, 255, 76);
 			}
 		}
 
@@ -40,7 +41,7 @@ form {
       pointer-events: none;
       
 			path {
-				fill: rgb(255, 225, 0);
+				fill: rgb(0, 0, 0);
 				transition: 0.4s ease-in-out;
 			}
     }
@@ -51,14 +52,19 @@ form {
         input {
           background-color: #FFF;
           padding-right: 50px;
-          box-shadow: inset 0px 0px 4px rgba(0, 0, 0, .5);
+					box-shadow: inset 0px 0px 4px rgba(0, 0, 0, .5);
+					
+					&::placeholder {
+						color: rgb(82, 82, 82);
+					}
         }
 
         svg {
           path {
-            fill: rgb(53, 0, 245);
+            fill: rgb(12, 0, 245);
           }
-        }
+				}
+				
     }
 
 		&:focus-within {
@@ -68,11 +74,15 @@ form {
 				background-color: #FFF;
 				padding-right: 50px;
 				box-shadow: inset 0px 0px 4px rgba(0, 0, 0, .5);
+
+				&::placeholder {
+					color: rgb(89, 89, 89);
+				}
 			}
 
 			svg {
 				path {
-					fill: rgb(53, 0, 245);
+					fill: rgb(33, 0, 245);
 				}
 			}
 		}

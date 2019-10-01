@@ -7,7 +7,7 @@ const Menu = ({ selectNews, state }) => {
   return (
     <nav>
       <div className="fixed-nav">
-        <h1>What's <span>New</span></h1>
+        <h1>The New <span>wave </span></h1>
         <div className="menu-buttons-section">
           <ul>
             <li onClick={() => selectNews(local)}>Local News</li>
