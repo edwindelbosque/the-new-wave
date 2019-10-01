@@ -17,7 +17,7 @@ class App extends Component {
       health,
       technology,
       science,
-      currentTopic: entertainment
+      currentTopic: local
     }
   }
 
