@@ -12,20 +12,23 @@ class App extends Component {
       health,
       technology,
       science,
-      currentTopic: local
+      currentTopic: local,
+      immutableTopic: local
     }
   }
 
   selectNews = (topic) => {
     this.setState({
-      currentTopic: topic
+      currentTopic: topic,
+      immutableTopic: topic
     })
   }
 
   searchNews = (searchInput) => {
+    const upperSearch = searchInput.toUpperCase();
     this.setState({
-      currentTopic: this.state.currentTopic
-        .filter(article => article.headline.toUpperCase().includes(searchInput.toUpperCase()))
+      currentTopic: this.state.immutableTopic
+        .filter(article => article.headline.toUpperCase().includes(upperSearch))
     })
   }
 
