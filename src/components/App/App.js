@@ -22,6 +22,13 @@ class App extends Component {
     })
   }
 
+  searchNews = (searchInput) => {
+    this.setState({
+      currentTopic: this.state.currentTopic
+        .filter(article => article.headline.toUpperCase().includes(searchInput.toUpperCase()))
+    })
+  }
+
   render() {
     const { currentTopic } = this.state;
     return (
@@ -31,7 +38,7 @@ class App extends Component {
           state={this.state}
         />
         <div>
-          <SearchForm />
+          <SearchForm searchNews={this.searchNews} />
           <main>
             <NewsContainer newsArticles={currentTopic} />
           </main>

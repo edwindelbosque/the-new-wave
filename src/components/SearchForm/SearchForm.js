@@ -13,6 +13,7 @@ class SearchForm extends Component {
     this.setState({
       search: event.target.value
     })
+    this.props.searchNews(this.state.search)
   }
 
   render() {
