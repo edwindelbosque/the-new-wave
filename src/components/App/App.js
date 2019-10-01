@@ -7,6 +7,7 @@ import science from '../../data/science';
 import './App.scss';
 import NewsContainer from '../NewsContainer/NewsContainer';
 import Menu from '../Menu/Menu';
+import SearchForm from '../SearchForm/SearchForm';
 
 class App extends Component {
   constructor() {
@@ -35,9 +36,12 @@ class App extends Component {
           selectNews={this.selectNews}
           state={this.state}
         />
-        <main>
-          <NewsContainer newsArticles={currentTopic} />
-        </main>
+        <div>
+          <SearchForm />
+          <main>
+            <NewsContainer newsArticles={currentTopic} />
+          </main>
+        </div>
       </div>
     );
   }

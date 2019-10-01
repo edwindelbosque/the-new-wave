@@ -1,13 +1,13 @@
 nav {
   background-color: rgb(31, 31, 31);
-  width: 500px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   h1 {
     margin: 20px auto;
-    width: 70%;
+    width: 182px;
     font-size: 30px;
     border: 2px solid rgb(255, 203, 32);
     color: rgb(255, 203, 32);
@@ -25,9 +25,9 @@ nav {
     display: flex;
     flex-direction: column; 
     align-items: flex-start;
-    width: 261px;
+    width: 265px;
     margin-top: 40px;
-    height: 280px;
+    height: 250px;
     padding: 0 35px;
     justify-content: space-around;
   }
@@ -37,7 +37,7 @@ nav {
     color: rgb(245, 245, 245);
     padding: 5px 5px 5px 10px;
     font-weight: 600;
-    font-size: 23px;
+    font-size: 20px;
     transition: .15s;
     cursor: pointer;
 
