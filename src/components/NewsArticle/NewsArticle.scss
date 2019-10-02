@@ -1,12 +1,12 @@
 article {
   display: flex;
   flex-direction: column;
-  background-color: rgb(44, 62, 255);
+  background-color: rgb(255, 255, 255);
   border: none;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.427);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.242);
 
   a {
-    font-size: 21px;
+    font-size: 20px;
     text-align: left;
     text-decoration: none;
     margin: 0 15px;
@@ -16,10 +16,10 @@ article {
   }
 
   p {
-    border-top: 2px solid rgba(0, 0, 0, 0.235);
+    border-top: 2px solid rgba(0, 0, 0, 0.153);
     padding: 10px 0 0;
     margin: 10px 15px 15px 15px;
-    color: rgb(255, 255, 255);
+    color: rgb(52, 52, 52);
     font-size: 15px;
     text-align: left;
     font-weight: 400;
@@ -28,20 +28,18 @@ article {
   img {
     height: 300px;
     object-fit: cover;
-    width: 100%;
-    // border-top: 3px solid rgb(50, 255, 32);
-
+		width: 100%;
+		border-bottom: 5px solid rgb(255, 48, 79);
   }
 
 }
 
-$link-color: rgb(0, 0, 0);
+$link-color: rgb(47, 54, 255);
 $linkAnimationSpeed: 0.3s;
-$text-color: rgb(255, 255, 255);
+$text-color: rgb(9, 9, 9);
 
 article {
 	a {
-		// border-bottom: 1px solid $text-color;
 		color: $text-color;
 		text-decoration: none;
 		transition: color $linkAnimationSpeed ease-in-out;
