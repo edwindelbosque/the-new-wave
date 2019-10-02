@@ -1,8 +1,11 @@
 import React from 'react';
 import './Menu.scss'
 
-const Menu = ({ selectNews, state }) => {
-  const { local, technology, entertainment, science, health } = state;
+const Menu = ({ selectNews, categories }) => {
+
+  const menuTabs = Object.keys(categories).splice(0, 5).map(key => {
+    return <li onClick={() => selectNews(categories[key])}>{key}</li>
+  });
 
   return (
     <nav>
@@ -10,11 +13,7 @@ const Menu = ({ selectNews, state }) => {
         <h1>The New <span>wave </span></h1>
         <div className="menu-buttons-section">
           <ul>
-            <li onClick={() => selectNews(local)}>Local News</li>
-            <li onClick={() => selectNews(technology)}>Technology</li>
-            <li onClick={() => selectNews(entertainment)}>Entertainment</li>
-            <li onClick={() => selectNews(science)}>Science</li>
-            <li onClick={() => selectNews(health)} > Health</li>
+            {menuTabs}
           </ul>
         </div>
       </div>
