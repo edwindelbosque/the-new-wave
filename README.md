@@ -4,7 +4,7 @@ This application was built with `create-react-app`.
 
 ## Check it out in GitHub Pages [here](https://edwindelbosque.github.io/whats-new/)!
 
-![](https://user-images.githubusercontent.com/48811985/66016504-70e19400-e4c6-11e9-9afa-44b2abafde8e.png)
+<img width="1433" src="https://user-images.githubusercontent.com/48811985/66016588-d2096780-e4c6-11e9-9405-ab2ba1fdc996.png">
 
 Add in the functionality so that a user can search through the news articles.  After a user has typed a search query, a user should either be able to press `Enter` or `Search` to filter out the correct news articles.  The search functionality should only filter through the selected news articles.
 
