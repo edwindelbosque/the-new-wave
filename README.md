@@ -1,4 +1,4 @@
-# What's New?
+# The New Wave :: Modern News
 
 This application was built with `create-react-app`.
 
