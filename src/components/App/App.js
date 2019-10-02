@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { local, entertainment, health, technology, science } from '../../index';
-import { Menu, SearchForm, NewsContainer } from '../../index';
+import { Menu, SearchForm, NewsContainer, local, entertainment, health, technology, science } from '../../index';
 import './App.scss';
 
 class App extends Component {
@@ -17,18 +16,18 @@ class App extends Component {
     }
   }
 
-  selectNews = (topic) => {
-    this.setState({
-      currentTopic: topic,
-      immutableTopic: topic
-    })
-  }
-
   searchNews = (searchInput) => {
     const upperSearch = searchInput.toUpperCase();
     this.setState({
       currentTopic: this.state.immutableTopic
         .filter(article => article.headline.toUpperCase().includes(upperSearch))
+    })
+  }
+
+  selectNews = (topic) => {
+    this.setState({
+      currentTopic: topic,
+      immutableTopic: topic
     })
   }
 
@@ -41,9 +40,13 @@ class App extends Component {
           categories={this.state}
         />
         <div>
-          <SearchForm searchNews={this.searchNews} />
+          <SearchForm
+            searchNews={this.searchNews}
+          />
           <main>
-            <NewsContainer newsArticles={currentTopic} />
+            <NewsContainer
+              newsArticles={currentTopic}
+            />
           </main>
         </div>
       </div>

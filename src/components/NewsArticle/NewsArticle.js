@@ -1,7 +1,8 @@
 import React from 'react';
 import './NewsArticle.scss';
 
-const NewsArticle = ({ id, headline, image, description, url }) => {
+const NewsArticle = ({ headline, image, description, url }) => {
+
   return (
     <article>
       <img alt={headline} src={image} />
