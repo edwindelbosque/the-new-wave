@@ -2,7 +2,7 @@
 
 This application was built with `create-react-app`.
 
-## Check it out in GitHub Pages [here](https://edwindelbosque.github.io/whats-new/)!
+## Check it out in GitHub Pages [here](https://edwindelbosque.github.io/the-new-wave/)!
 
 <img width="1433" src="https://user-images.githubusercontent.com/48811985/66016588-d2096780-e4c6-11e9-9405-ab2ba1fdc996.png">
 
