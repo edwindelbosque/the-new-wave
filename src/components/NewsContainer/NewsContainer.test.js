@@ -1,16 +1,15 @@
 import React from 'react';
+import NewsContainer from './NewsContainer';
 import { shallow } from 'enzyme';
-import Menu from './Menu';
 
-describe('NewsArticle', () => {
+describe('NewsContainer', () => {
+
   it('should match the snapshot with all data passed in correctly', () => {
     const wrapper = shallow(
-      <Menu
-        selectNews={jest.fn()}
-        categories="array of categories" key="1"
+      <NewsContainer
+        newsArticles={[{ idea1: 'info' }, { idea2: 'info' }]}
       />
-    );
-
+    )
     expect(wrapper).toMatchSnapshot();
-  });
-});
+  })
+})

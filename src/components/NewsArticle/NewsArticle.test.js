@@ -1,0 +1,19 @@
+import React from 'react';
+import NewsArticle from './NewsArticle';
+import { shallow } from 'enzyme';
+
+describe('NewsArticle', () => {
+  it('should match the snapshot with all data passed in correctly', () => {
+    const wrapper = shallow(
+      <NewsArticle
+        key={1}
+        id={1}
+        headline="Spider-Man Will Remain in the Marvel Cinematic Universe"
+        image="https://static01.nyt.com/images/2019/09/27/multimedia/27xp-spiderman/27xp-spiderman-superJumbo.jpg?quality=90&auto=webp"
+        description="The web slinger will be the only superhero with the ability to cross between Disney and Sony’s cinematic universes, according to Marvel Studios."
+        url="https://www.nytimes.com/2019/09/27/business/media/spiderman-mcu-sony-marvel.html"
+      />
+    )
+    expect(wrapper).toMatchSnapshot();
+  })
+})
