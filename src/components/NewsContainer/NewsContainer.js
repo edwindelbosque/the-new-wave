@@ -1,5 +1,5 @@
 import React from 'react';
-import { NewsArticle } from '../../index';
+import NewsArticle from '../NewsArticle/NewsArticle';
 import './NewsContainer.scss';
 
 const NewsContainer = ({ newsArticles }) => {
@@ -16,4 +16,4 @@ const NewsContainer = ({ newsArticles }) => {
   );
 };
 
-export { NewsContainer };
+export default NewsContainer;

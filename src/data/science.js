@@ -57,4 +57,4 @@ const science = [
   }
 ]
 
-export { science };
+export default science;

@@ -57,4 +57,4 @@ const entertainment = [
   }
 ]
 
-export { entertainment };
+export default entertainment;

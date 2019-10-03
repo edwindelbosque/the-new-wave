@@ -57,4 +57,4 @@ const health = [
   }
 ]
 
-export { health };
+export default health;

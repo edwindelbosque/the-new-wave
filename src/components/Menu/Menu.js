@@ -3,8 +3,8 @@ import './Menu.scss'
 
 const Menu = ({ selectNews, categories }) => {
 
-  const menuTabs = Object.keys(categories).splice(0, 5).map(key => {
-    return <li onClick={() => selectNews(categories[key])}>{key}</li>
+  const menuTabs = Object.keys(categories).splice(0, 5).map((key, index) => {
+    return <li onClick={() => selectNews(categories[key])} key={index}>{key}</li>
   });
 
   return (
@@ -21,4 +21,4 @@ const Menu = ({ selectNews, categories }) => {
   )
 }
 
-export { Menu };
+export default Menu;

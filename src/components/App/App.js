@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
-import { Menu, SearchForm, NewsContainer, local, entertainment, health, technology, science } from '../../index';
+import Menu from '../Menu/Menu';
+import SearchForm from '../SearchForm/SearchForm';
+import NewsContainer from '../NewsContainer/NewsContainer';
 import './App.scss';
+import local from '../../data/local';
+import entertainment from '../../data/entertainment';
+import health from '../../data/health';
+import technology from '../../data/technology';
+import science from '../../data/science';
 
 class App extends Component {
   constructor() {
@@ -54,4 +61,4 @@ class App extends Component {
   }
 }
 
-export { App };
+export default App;

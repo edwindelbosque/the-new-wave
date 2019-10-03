@@ -43,4 +43,4 @@ class SearchForm extends Component {
   }
 }
 
-export { SearchForm };
+export default SearchForm;

@@ -12,4 +12,4 @@ const NewsArticle = ({ headline, image, description, url }) => {
   )
 }
 
-export { NewsArticle };
+export default NewsArticle;
