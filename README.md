@@ -4,7 +4,7 @@ This application was built with `create-react-app`.
 
 ## Check it out in GitHub Pages [here](https://edwindelbosque.github.io/the-new-wave/)!
 
-<img width="1439" src="https://user-images.githubusercontent.com/48811985/66159865-620af680-e618-11e9-93fa-25bedafa43e8.png">
+<img width="1435"  src="https://user-images.githubusercontent.com/48811985/66159945-92eb2b80-e618-11e9-869b-9fd840a6a01f.png">
 
 Instead of importing the news data from the data directory, use the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) to get the data.  Read this [article](https://www.robinwieruch.de/react-fetching-data) on where you should fetch your data in React.
 
