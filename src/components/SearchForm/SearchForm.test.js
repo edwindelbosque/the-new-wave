@@ -20,7 +20,9 @@ describe('SearchForm', () => {
         searchNews={searchNews}
       />
     )
-    wrapper.find('input').simulate('change', { target: { value: 'A' } });
+    const mockInput = { target: { value: 'A' } };
+
+    wrapper.find('input').simulate('change', mockInput);
     expect(searchNews).toHaveBeenCalled();
   })
 

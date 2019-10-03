@@ -16,8 +16,8 @@ class SearchForm extends Component {
     this.props.searchNews(event.target.value)
   }
 
-  handleSubmit = (e) => {
-    e.preventDefault();
+  handleSubmit = (event) => {
+    event.preventDefault();
   }
 
   render() {
