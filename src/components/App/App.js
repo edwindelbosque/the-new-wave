@@ -4,23 +4,31 @@ import SearchForm from '../SearchForm/SearchForm';
 import NewsContainer from '../NewsContainer/NewsContainer';
 import './App.scss';
 import local from '../../data/local';
-import entertainment from '../../data/entertainment';
-import health from '../../data/health';
-import technology from '../../data/technology';
-import science from '../../data/science';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      local,
-      entertainment,
-      health,
-      technology,
-      science,
+      local: undefined,
+      entertainment: undefined,
+      health: undefined,
+      technology: undefined,
+      science: undefined,
       currentTopic: local,
-      immutableTopic: local
+      immutableTopic: local,
     }
+  }
+
+  componentDidMount() {
+    fetch('https://whats-new-api.herokuapp.com/api/v1/news')
+      .then(response => response.json())
+      .then(data => this.setState({
+        local: data.local,
+        entertainment: data.entertainment,
+        health: data.health,
+        technology: data.technology,
+        science: data.science
+      }));
   }
 
   searchNews = (searchInput) => {

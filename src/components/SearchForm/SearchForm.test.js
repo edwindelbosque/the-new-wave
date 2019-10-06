@@ -26,4 +26,36 @@ describe('SearchForm', () => {
     expect(searchNews).toHaveBeenCalled();
   })
 
+  // it('should call method handleSubmit', () => {
+  //   const wrapper = shallow(
+  //     <SearchForm
+  //       searchNews={searchNews}
+  //     />
+  //   )
+  //   // setup
+  //   const mockEvent = { preventDefault: jest.fn() };
+  //   wrapper.instance().handleSubmit = jest.fn();
+
+  //   // execution
+  //   wrapper.instance().handleSubmit =
+  // })
+
+
+  // it('should call searchNews method when handleChange executes', () => {
+  //   const wrapper = shallow(
+  //     <SearchForm
+  //       searchNews={searchNews}
+  //     />
+  //   )
+  //   // setup
+  //   const mockEvent = { target: { value: 'A' } };
+  //   wrapper.instance().handleChange = jest.fn();
+
+  //   // execution
+  //   wrapper.instance().handleChange(mockEvent);
+
+  //   // expectation
+  //   expect(wrapper.instance().searchNews).toHaveBeenCalledWith(mockEvent);
+  // })
+
 })
