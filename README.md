@@ -11,9 +11,9 @@ This project is a news website using React.
 
 ## Learning goals
 
-Get more comfortable using react.
-Implement a nice-looking UI.
-Write modular, reusable code that follows SRP (Single Responibility Principle) and SOLID principle
+- Keep practicing react.
+- Implement a nice-looking UI.
+- Write modular, reusable code that follows SRP and SOLID principle.
 
 ## Built with
 - React
