@@ -3,7 +3,7 @@
 ## Summary
 
 This project is a news website using React.
-### Check it out in GitHub Pages [here](https://edwindelbosque.github.io/the-new-wave/)!
+### Check it out in GitHub Pages [here](https://edwindelbosque.github.io/the-new-wave/) and also use it on your phone!
 
 ## Screenshots
 
@@ -11,7 +11,9 @@ This project is a news website using React.
 
 ## Learning goals
 
-- Keep practicing react.
+- Keep practicing React.
+- Practice making websites fully desktop and mobile-friendly.
+- Fetch a REST API in React.
 - Implement a nice-looking UI.
 - Write modular, reusable code that follows SRP and SOLID principle.
 
